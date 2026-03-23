@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><title>J4 Listings — Authorized</title></head>
+<body>
+<h1>Authorization successful</h1>
+<p>Copy the code below and paste it back into Claude:</p>
+<pre id="code" style="background:#eee;padding:12px;font-size:14px;word-break:break-all;"></pre>
+<script>
+  const code = new URLSearchParams(location.search).get('code');
+  document.getElementById('code').textContent = code || 'No code found in URL — check address bar.';
+</script>
+</body></html>
